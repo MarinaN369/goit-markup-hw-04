@@ -66,8 +66,8 @@ img {
 .header-logo-span {
   color: #2e2f42;
 }
-.header-item:hover,
-.header-item:focus {
+.current:hover,
+.current:focus {
   color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -266,6 +266,7 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
   text-align: center;
+  margin-bottom: 8px;
 }
 .team-soc-list {
   position: relative;
@@ -280,8 +281,10 @@ img {
 .team-soc-icon {
   background: #4d5ae5;
   border-radius: 50%;
-  width: 32px;
-  height: 32px;
+}
+.team-soc-icon:hover,
+.team-soc-icon:focus {
+  background: #404bbf;
 }
 .our-portfolio {
   padding-top: 120px;
@@ -312,7 +315,6 @@ img {
   align-items: center;
   background: #4d5ae5;
   transform: translateY(100%);
-  transition: ;
 }
 .portfolio-cover-text {
   font-family: Roboto;
@@ -394,10 +396,10 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
-.team-soc-footer {
+.team-soc-list {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  align-items: center;
 }
 .soc-med-footer {
   font-size: 16px;
@@ -405,4 +407,15 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.team-soc-icon-footer {
+  background-color: #4d5ae5;
+  border-radius: 50%;
+}
+.team-soc-icon-footer:hover,
+.team-soc-icon-footer:focus {
+  background-color: #31d0aa;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
