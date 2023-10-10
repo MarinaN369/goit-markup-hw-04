@@ -152,10 +152,10 @@ img {
   background-position: center;
   background-size: cover;
   max-width: 1440px;
+  margin: 0 auto;
 }
 .hero {
   padding: 188px 0;
-  margin: 0 auto;
 }
 
 .hero-title {
@@ -455,18 +455,18 @@ img {
   display: flex;
   align-items: baseline;
 }
-.logofooter {
+.container {
   margin-right: 120px;
 }
 .team-soc-list {
   display: flex;
   gap: 16px;
-  justify-content: center;
-  align-items: center;
+  margin-top: 16px;
 }
 .team-soc-item {
   width: 40px;
   height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-soc-link {
   width: 100%;
@@ -493,5 +493,5 @@ img {
 .team-soc-link:hover,
 .team-soc-link:focus {
   background-color: #31d0aa;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
