@@ -325,7 +325,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-cover-block {
+/* .portfolio-cover-block {
   position: absolute;
   top: 0;
   left: 0;
@@ -334,19 +334,33 @@ img {
   align-items: center;
   background: #4d5ae5;
   transform: translateY(100%);
-}
-.portfolio-cover-text {
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
-}
-. .portfolio-cover-wrap {
+} */
+/* .portfolio-cover-wrap {
+  position: relative;
+  overflow: hidden;
+} */
+.portfolio-cover-block {
   position: relative;
   overflow: hidden;
 }
+.portfolio-cover-text {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-cover-text:hover {
+  transform: translateY(0%);
+}
+
 .our-portfolio-title {
   font-size: 36px;
   font-weight: 700;
@@ -417,8 +431,33 @@ img {
 }
 .team-soc-list {
   display: flex;
+  gap: 16px;
   justify-content: center;
   align-items: center;
+}
+.team-soc-item {
+  width: 40px;
+  height: 40px;
+}
+.team-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-soc-icon-footer {
+  fill: #f4f4fd;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.container {
+  margin-right: 120px;
 }
 .soc-med-footer {
   font-size: 16px;
@@ -426,15 +465,11 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  text-align: center;
   margin-bottom: 16px;
 }
-.team-soc-icon-footer {
-  background-color: #4d5ae5;
-  border-radius: 50%;
-}
-.team-soc-icon-footer:hover,
-.team-soc-icon-footer:focus {
+
+.team-soc-link:hover,
+.team-soc-link:focus {
   background-color: #31d0aa;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
