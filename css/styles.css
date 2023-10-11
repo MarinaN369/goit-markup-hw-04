@@ -75,7 +75,7 @@ img {
 .header-menu-item {
   color: #404bbf;
 }
-.current {
+.header-menu-link .current {
   color: #404bbf;
   position: relative;
   font-weight: 500;
