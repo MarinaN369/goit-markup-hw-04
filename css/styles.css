@@ -66,7 +66,9 @@ img {
 .header-logo-span {
   color: #2e2f42;
 }
-
+.current {
+  color: #404bbf;
+}
 .current:hover,
 .current:focus {
   color: #404bbf;
@@ -74,7 +76,7 @@ img {
 }
 
 .current::after {
-  color: #404bbf;
+  background-color: #404bbf;
   width: 48px;
   height: 48px;
   content: "";
@@ -84,6 +86,7 @@ img {
   bottom: -1px;
   height: 4px;
   border-radius: 2px;
+  color: #404bbf;
 }
 
 .header-menu {
