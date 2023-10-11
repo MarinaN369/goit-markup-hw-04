@@ -66,10 +66,8 @@ img {
 .header-logo-span {
   color: #2e2f42;
 }
-.header-menu-link,
-.current {
+.header-menu-link {
   color: #404bbf;
-  position: absolute;
 }
 /* .current:hover,
 .current:focus {
